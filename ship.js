@@ -6,7 +6,7 @@ function ship(){
         fill (255,215,0);
         stroke (255,215,0);
         rectMode(CENTER);
-        rect(this.x, height-20,20,50);
+        rect(this.x,height-20,20,50);
     }
     this.setDir= function(dir){
         this.xdir=dir;

@@ -6,8 +6,15 @@ this.r =30;
 this.xdir=1;
 
 
+
+
 this.begone=function(){
-    this.r=this.r-2;
+    this.r=this.r/2;
+    // if (this.r ){
+    //     fill(51);
+    //     stroke(51);
+    //     rect(this.x,this.y,this.r/2, this.r/2);}
+    
 }
 this.shiftDown= function(){
     this.xdir *= -1;
@@ -22,6 +29,5 @@ this.move=function(){
 this.show=function(){
 fill(255,0,0);
 stroke(255,0,0);
-rect(this.x, this.y,this.r*2,this.r*2); }  
-}
-
+rect(this.x, this.y,this.r*2,this.r*2); 
+}}

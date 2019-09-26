@@ -9,7 +9,7 @@ function Drop(x,y){
     this.show=function(){
     fill(0,215,255);
     noStroke();
-    ellipse(this.x, this.y,this.r*2,this.r*2); }  
+    ellipse(this.x, this.y,this.r*2,this.r*2); }
     
     //this.remove=function(){
      //this.toDelete =true;

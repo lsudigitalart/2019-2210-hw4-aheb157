@@ -22,7 +22,7 @@ for(var i =0; i<drops.length; i++){
        if(drops[i].hits(flowers[j])){
            flowers[j].begone();
            //drops[i].remove();
-        
+          
        }
     }
 
@@ -38,8 +38,17 @@ for(var i =0; i < flowers.length; i++){
 if (edge){
     for (var i =0; i<flowers.length; i++){
         flowers[i].shiftDown();
-}}
 
+}}
+var stop = false;
+for (var j =0; j<flowers.length; j++){
+    if(flowers[j] > 350){
+        stop=true;}
+        if (stop){
+        textSize(50);
+        stroke(255,0,0);
+        text("GAME OVER",width/4, height/2);
+    }}
 //for(var i =0; i<drops.length; i++){
  //if (drops[i].toDelete){
   //   drops.splice(i, 1);
